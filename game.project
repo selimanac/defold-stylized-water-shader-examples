@@ -1,0 +1,37 @@
+[bootstrap]
+main_collection = /example/scenes/day.collectionc
+render = /water/render/water.renderc
+
+[script]
+shared_state = 1
+
+[display]
+width = 1920
+height = 1080
+high_dpi = 1
+samples = 0
+
+[android]
+input_method = HiddenInputField
+package = com.defold.watershader
+
+[html5]
+scale_mode = stretch
+
+[project]
+title = defold-stylized-water-shader-examples
+dependencies#0 = https://github.com/britzl/extension-imgui/archive/refs/heads/master.zip
+dependencies#1 = https://github.com/selimanac/defold-stylized-water-shader/archive/refs/heads/main.zip
+
+[library]
+include_dirs = water
+
+[native_extension]
+app_manifest = /macos.appmanifest
+
+[shader]
+exclude_gles_sm100 = 1
+
+[graphics]
+texture_profiles = /default.texture_profiles
+
